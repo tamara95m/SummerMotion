@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+      >
+        <OnSwipe
+            motion:touchAnchorId="@+id/animationView"
+            motion:touchAnchorSide="bottom"
+            motion:dragDirection="dragDown" />
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="374dp"
+            android:layout_width="400dp"
+            android:id="@+id/animationView"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible"
+            motion:layout_constraintVertical_bias="0.526"
+            motion:layout_editor_absoluteX="-6dp" />
+        <Constraint
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:id="@+id/imageView"
+            motion:layout_editor_absoluteX="30dp"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/animationViewIceCream"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="39dp"/>
+        <Constraint
+
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/animationWaterMelon"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="308dp" />
+
+        <Constraint
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/animationjuice"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"/>
+        <Constraint
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/animationWater"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="316dp" />
+        <Constraint
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/animationSwim"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="624dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="367dp"
+            android:layout_width="343dp"
+            android:id="@+id/animationView"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_editor_absoluteX="2dp"
+            motion:layout_editor_absoluteY="131dp"
+            />
+        <Constraint
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/imageView"
+           />
+        <Constraint
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/animationViewIceCream"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="100dp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="140dp"/>
+        <Constraint
+
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/animationWaterMelon"
+            android:visibility="visible"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="50dp"
+
+
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+        <Constraint
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/animationjuice"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:visibility="visible"/>
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/animationWater"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="308dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:visibility="visible"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:layout_height="200dp"
+            android:layout_width="200dp"
+            android:id="@+id/animationSwim"
+            android:layout_marginEnd="100dp"
+           android:layout_marginStart="70dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="100dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+
+            android:visibility="visible"/>
+
+    </ConstraintSet>
+</MotionScene>
